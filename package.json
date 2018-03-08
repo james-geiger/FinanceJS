@@ -1,0 +1,25 @@
+{
+  "name": "financejs",
+  "version": "1.0.0",
+  "description": "Finance Library for Javascript",
+  "main": "finance.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuskratMike/FinanceJS.git"
+  },
+  "keywords": [
+    "finance",
+    "js",
+    "javascript",
+    "library"
+  ],
+  "author": "Michael Marsh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MuskratMike/FinanceJS/issues"
+  },
+  "homepage": "https://github.com/MuskratMike/FinanceJS#readme"
+}
