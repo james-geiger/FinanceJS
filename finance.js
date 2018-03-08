@@ -166,3 +166,5 @@ function Finance() {
   }
 
 }
+
+module.exports = Finance;
