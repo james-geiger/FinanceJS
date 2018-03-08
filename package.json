@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/MuskratMike/FinanceJS/issues"
   },
-  "homepage": "https://github.com/MuskratMike/FinanceJS#readme"
+  "homepage": "https://github.com/MuskratMike/FinanceJS#readme",
+  "devDependencies": {
+    "jest": "^22.4.2"
+  }
 }
