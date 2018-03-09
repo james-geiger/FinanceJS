@@ -48,7 +48,7 @@ function Finance() {
     return parseFloat((assets/sales).toFixed(2));
   }
 
-  // Compound Interest (CI)
+  // Cash Flow (CF)
   // income can either by an single number or an array of numbers
   // expenses can either by an single number or an array of numbers
   this.CF = function(income, expenses){
@@ -70,19 +70,19 @@ function Finance() {
     return parseFloat(total.toFixed(2));
   }
 
-  // Present Value of an Ordinary Annuity (PV)
+  // Present Value of an Ordinary Annuity (PVOA)
   // pmt = payment
   // r = rate
   // t = number of periods
-  this.PV = function(pmt, r, t){
+  this.PVOA = function(pmt, r, t){
     return parseFloat((pmt*((1/r)-(1/(r*Math.pow((1+r),(t)))))).toFixed(2));
   }
 
-  // Future Value of an Ordinary Annuity (FV)
+  // Future Value of an Ordinary Annuity (FVOA)
   // pmt = payment
   // r = rate
   // t = number of periods
-  this.FV = function(pmt, r, t){
+  this.FVOA = function(pmt, r, t){
     return parseFloat(( pmt * ( ((Math.pow((1+r),(t)))/(r)) - ((1)/(r)) ) ).toFixed(2));
   }
 
