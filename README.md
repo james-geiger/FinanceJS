@@ -1,5 +1,5 @@
 # FinanceJS : A Finance Library for JavaScript
-Master: [![Build Status](https://travis-ci.org/MuskratMike/FinanceJS.svg?branch=master)](https://travis-ci.org/MuskratMike/FinanceJS)
+[![Build Status](https://travis-ci.org/MuskratMike/FinanceJS.svg?branch=master)](https://travis-ci.org/MuskratMike/FinanceJS)
 
 This is a collection of financial functions that can used as a toolkit for any JavaScript based financial applications. Whether you are builing a simple calculator or other financial applications for work or fun. More functions will be added as time goes on. If there is a function that you think should be in here, let me know!
 
