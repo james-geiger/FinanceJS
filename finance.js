@@ -98,8 +98,8 @@ function Finance() {
   // tL = total liabilities
   // tD = total debts
   // tI = total income
-  this.LR = function(tL, tD, tI){
-    var liabilities = 0, debts = 0, income = 0;
+  this.LR = function(tL, tD, tE){
+    var liabilities = 0, debts = 0, equity = 0;
     if(Array.isArray(tL)){
       for(var i = 0; i < tL.length; i++) {
         liabilities = liabilities + tL[i];
@@ -114,14 +114,14 @@ function Finance() {
     } else {
       debts = debts + tD;
     }
-    if(Array.isArray(tI)){
+    if(Array.isArray(tE)){
       for(var i = 0; i < tI.length; i++) {
-        income = income + tI[i];
+        equity = equity + tE[i];
       }
     } else {
-      income = income + tI;
+      equity = equity + tE;
     }
-    return parseFloat(((liabilities+debts)/income).toFixed(2));
+    return parseFloat(((liabilities+debts)/equity).toFixed(2));
   }
 
   // Rule of 72 (R72)
@@ -153,7 +153,7 @@ function Finance() {
 
   // Annual Percentage Yield (APY)
   // r = rate
-  // n =
+  // n = number of periods
   this.APY = function(r, n){
     return Math.pow((1 + (r/n)),(n)) - 1;
   }
