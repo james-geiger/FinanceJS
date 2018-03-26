@@ -70,7 +70,7 @@ test('CAGR : A beginning value of $10,000 and ending value of $19,500 after 3 ye
 });
 
 test('CAGR : A beginning value of $20,000 and ending value of $145,000 after 6 years', () => {
-  expect(f.CAGR(20000, 145000, 6)).toBe(0.3912003163865001);
+  expect(f.CAGR(20000, 145000, 6)).toBe(0.3912003163865003);
 });
 
 // Testing LR
