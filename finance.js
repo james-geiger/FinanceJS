@@ -91,7 +91,7 @@ function Finance() {
   // eV = ending value
   // t = number of periods
   this.CAGR = function(bV, eV, t){
-    return Math.pow((eV/bV),(1/t)) - 1;
+    return parseFloat(((Math.pow((eV/bV),(1/t)) - 1).toFixed(2)));
   }
 
   // Leverage Ratio (LR)
@@ -148,14 +148,14 @@ function Finance() {
   // p = monthly payment
   // apr = APR
   this.CCE = function(b, p, apr){
-    return (-1/30)*((Math.log(1+((b/p)*(1-Math.pow((1+(apr/365)),(30))))))/((Math.log(1+(apr/365)))));
+    return parseFloat(((-1/30)*((Math.log(1+((b/p)*(1-Math.pow((1+(apr/365)),(30))))))/((Math.log(1+(apr/365)))))).toFixed(2));
   }
 
   // Annual Percentage Yield (APY)
   // r = rate
   // n = number of periods
   this.APY = function(r, n){
-    return Math.pow((1 + (r/n)),(n)) - 1;
+    return parseFloat((Math.pow((1 + (r/n)),(n)) - 1).toFixed(2));
   }
 
   // Return on Assets (ROA)

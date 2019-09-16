@@ -66,11 +66,11 @@ test('FVOA : A payment $50,000 per year at 5% a year after 10 years', () => {
 
 // Testing CAGR
 test('CAGR : A beginning value of $10,000 and ending value of $19,500 after 3 years', () => {
-  expect(f.CAGR(10000, 19500, 3)).toBe(0.24933297746139083);
+  expect(f.CAGR(10000, 19500, 3)).toBe(0.25);
 });
 
 test('CAGR : A beginning value of $20,000 and ending value of $145,000 after 6 years', () => {
-  expect(f.CAGR(20000, 145000, 6)).toBe(0.3912003163865003);
+  expect(f.CAGR(20000, 145000, 6)).toBe(0.39);
 });
 
 // Testing LR
@@ -102,20 +102,20 @@ test('ERP : Expected returns for 2%, 5%, 3% with weights of 15%, 10%, 20%', () =
 
 // Testing CCE
 test('CCE : Balance of $5,000 with a monthly payment at $100 at 11% APR', () => {
-  expect(f.CCE(5000, 100, .11)).toBe(66.94907715792962);
+  expect(f.CCE(5000, 100, .11)).toBe(66.95);
 });
 
 test('CCE : Balance of $3,600 with a monthly payment at $216 at 14% APR', () => {
-  expect(f.CCE(3600, 216, .14)).toBe(18.622683232923066);
+  expect(f.CCE(3600, 216, .14)).toBe(18.62);
 });
 
 // Testing APY
 test('APY : Annual rate of 6% (.5% monthly) for 12 months', () => {
-  expect(f.APY(.06, 12)).toBe(.06167781186449761);
+  expect(f.APY(.06, 12)).toBe(.06);
 });
 
 test('APY : Annual rate of 10% (.0274% monthly) for 365 days', () => {
-  expect(f.APY(.1, 365)).toBe(0.10515578161622718);
+  expect(f.APY(.1, 365)).toBe(0.11);
 });
 
 // Testing ROA
